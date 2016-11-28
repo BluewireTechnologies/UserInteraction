@@ -36,3 +36,10 @@ def interactions:
     normaliseInteraction
   ]
 ;
+
+def linkClicks:
+  {
+    "mddf": (.["@fields"].log.FieldInteractions["a.mddfDoseInformationLink"].EventCounts.mousedown + 0),
+    "bnf/bnfc": (.["@fields"].log.FieldInteractions["div.bnfLink"].EventCounts.mousedown + 0)
+  }
+;
